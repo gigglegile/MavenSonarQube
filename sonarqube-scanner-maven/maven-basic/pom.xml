@@ -13,7 +13,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.compiler.release>11</maven.compiler.release>
-	<java.home>/usr/local/jdk1.8.0_181/bin/javac</java.home>
+	<java.home>/usr/local/jdk</java.home>
   </properties>
 
   <dependencies>
@@ -40,6 +40,7 @@
 		  <configuration>
 				<source>1.8</source>
 				<target>1.8</target>
+				<executable>${java.home}</executable>
 				<encoding>UTF-8</encoding>
 		  </configuration>
         </plugin>
